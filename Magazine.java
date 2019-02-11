@@ -1,7 +1,7 @@
 
 /**
  * Store details of the magazine,
- * such as title, publisher(, number releases per year), genre and price.
+ * such as title, publisher, genre and price.
  * 
  *
  * @author (Vilde-Sofie Didriksen)
@@ -14,10 +14,7 @@ public class Magazine
     
     //magazine's publisher
     private String publisher;
-    
-    // Number of releases per year
-    //private int releases;
-    
+   
     // Tells the magazine's genre
     private String genre;
     

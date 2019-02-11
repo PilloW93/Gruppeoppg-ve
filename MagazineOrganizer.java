@@ -89,7 +89,7 @@ public class MagazineOrganizer
         while(it.hasNext() && !found)
     {
         Magazine magazine = it.next();
-        if(magazine.getTitle().contains(title))
+        if(magazine.getTitle().toLowerCase().contains(title.toLowerCase()))
         {
         foundmagazine = magazine;
         found = true;
