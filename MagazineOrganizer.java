@@ -17,6 +17,8 @@ public class MagazineOrganizer
 {
    
     private ArrayList<Magazine> magazines;
+    //* test av 
+   
 
     /**
      * Constructor for objects of class MagazineOrganizer
