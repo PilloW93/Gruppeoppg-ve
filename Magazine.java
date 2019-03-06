@@ -4,33 +4,35 @@
  * such as title, publisher, genre and price.
  * 
  *
- * @author (Vilde-Sofie Didriksen)
+ * @author (Group 8 - Sondre Grebstad, Emilie Skarbø, Vilde-Sofie Didriksen)
  * @version (v0.1)
  */
 public class Magazine
 {
     // the title og the magazine
     private String title;
-    
+
     //magazine's publisher
     private String publisher;
-   
+
     // Tells the magazine's genre
     private String genre;
-    
+
     // Price for the magazine
     private int price;
-    
 
     /**
-     * Constructor for objects of class Magazine.
+     * Creates an instance of the class Magazine.
      * sets the title, publisher and genre.
+     * 
+     * @param title The title of the magazine
+     * @param publisher The publisher of the magazine
      */
-    public Magazine(String title, String publisher, String genre)
+    public Magazine(String title, String publisher)
     {
         this.title = title;
         this.publisher = publisher;
-        this.genre = genre;
+        
     }
 
     /**
@@ -40,15 +42,15 @@ public class Magazine
     {
         return title;
     }
-    
+
     /**
      * returns the publisher
      */
-    private String getPublisher()
+    public String getPublisher()
     {
         return publisher;
     }
-    
+
     /**
      * returns the genre
      */
@@ -58,25 +60,36 @@ public class Magazine
     }
     
     /**
-     * Retuns the details of tehe magazine.
+     * sets the genere of the Magazine.
      */
-    public void printDetails()
+    public void setGenre(String genre)
     {
-     System.out.println(title);
-     System.out.println("Publisher: " + publisher);
-     System.out.println("Genre: "+ genre);
+        this.genre = genre;
     }
     
-    /**
-     * Set the price of the magazine
+     /**
+     * Set the price of the magazine.
      */
     public void setPrice(int price)
     {
         this.price = price;
     }
-    
+
+    /**
+     * Print the details of the magazine.
+     * Prints title, publisher and genre.
+     */
+    public void printDetails()
+    {
+        System.out.println("Title: " + title);
+        System.out.println("Publisher: " + publisher);
+        System.out.println("Genre: " + genre);
+    }
+
+
     /**
      * returns the price of the magazine
+     * @return price, the price of the magazine.
      */
     public int getPrice()
     {
